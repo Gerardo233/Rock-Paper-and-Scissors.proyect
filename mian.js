@@ -63,3 +63,35 @@ function Process(userChoice, computerChoice) {
 		DisableWeaponSelection();
 	}
 }
+
+//Events for when the user selects a weapon
+rockBlock.addEventListener('click', ToRock);
+
+paperBlock.addEventListener('click', ToPaper);
+
+scissorsBlock.addEventListener('click', ToScissors);
+
+function DisableWeaponSelection() {
+	paperBlock.removeEventListener('click', ToPaper);
+	rockBlock.removeEventListener('click', ToRock);
+	scissorsBlock.removeEventListener('click', ToScissors);
+}
+
+//Conversions
+function ToRock() {
+	weaponToNumber = 2;
+	let computerWeapon = randomNumber();
+	Process(weaponToNumber, computerWeapon);
+}
+
+function ToPaper() {
+	weaponToNumber = 2;
+	let computerWeapon = randomNumber();
+	Process(weaponToNumber, computerWeapon);
+}
+
+function ToScissors() {
+	weaponToNumber = 3;
+	let computerWeapon = randomNumber();
+	Process(weaponToNumber, computerWeapon);
+}
