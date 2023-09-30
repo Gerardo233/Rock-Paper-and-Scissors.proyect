@@ -95,3 +95,18 @@ function ToScissors() {
 	let computerWeapon = randomNumber();
 	Process(weaponToNumber, computerWeapon);
 }
+
+reset.addEventListener('click', () => {
+	points_of_user = 0;
+	points_of_computer = 0;
+	text.innerHTML = '...';
+
+	userPointsDisplay.innerHTML = points_of_user;
+	computerPointsDisplay.innerHTML = points_of_computer;
+
+	rockBlock.addEventListener('click', ToRock);
+
+	paperBlock.addEventListener('click', ToPaper);
+
+	scissorsBlock.addEventListener('click', ToScissors);
+});
