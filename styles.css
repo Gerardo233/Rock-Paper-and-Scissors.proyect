@@ -8,6 +8,14 @@
 	--second-title: 'Lilita One', cursive;
 }
 
+body{
+    background-color: #191d88;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .flex {
 	display: flex;
 	align-items: center;
@@ -16,7 +24,9 @@
 /*Main container styles*/
 .container {
 	font-size: 16px;
-	height: 1000px;
+	height: auto;
+    width: 90%;
+    padding: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
