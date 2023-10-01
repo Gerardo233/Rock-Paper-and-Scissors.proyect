@@ -110,3 +110,32 @@ reset.addEventListener('click', () => {
 
 	scissorsBlock.addEventListener('click', ToScissors);
 });
+
+/*let selectors = document.getElementsByClassName('selectors');
+console.log(selectors);
+let selector = document.getElementsByClassName('selector');
+let displayWeapon = document.querySelector('.weapon-selected-display');
+let j = 0;
+
+function ShowElement(index) {
+	for (let i = 0; i < selector.length; i++) {
+		selector[i].classList.add('hidden');
+	}
+	displayWeapon.classList.remove('hidden');
+	selector[index].classList.remove('hidden');
+
+	console.log(selector[index]);
+}
+
+for (let j = 0; j < selectors.length; j++) {
+	selectors[j].addEventListener('click', function () {
+		ShowElement(j);
+	});
+}
+
+document.addEventListener('keydown', function (e) {
+	if (e.key === 'Escape') {
+		displayWeapon.classList.add('hidden');
+	}
+});
+ */
